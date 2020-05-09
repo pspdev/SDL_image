@@ -64,9 +64,9 @@ pkgconfig_DATA = SDL_image.pc
 %.o : %.rc
 	$(WINDRES) $< $@
 
-noinst_PROGRAMS = showimage
+#noinst_PROGRAMS = showimage
 
-showimage_LDADD = libSDL_image.la
+#showimage_LDADD = libSDL_image.la
 
 # Rule to build tar-gzipped distribution package
 $(PACKAGE)-$(VERSION).tar.gz: distcheck
